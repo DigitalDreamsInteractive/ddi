@@ -255,8 +255,25 @@ nav {
   
 }
 
+.button-blue {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
 
-button {
+.button-blue:hover {
+    background-color: #2976aa;
+}
+
+.button-red {
     display: inline-block;
     padding: 10px 20px;
     background-color: #E74C3C;
@@ -270,8 +287,15 @@ button {
     border-radius: 20px;
 }
 
-button:hover {
+.button-red:hover {
     background-color: #C0392B;
+}
+
+@media (max-width: 480px) {
+
+    .button-red,.button-blue{
+        width: 100%;
+    }
 }
 
 .flex-container {
@@ -342,7 +366,8 @@ button:hover {
 #founder {
     display: flex;
     padding: 30px;
-    width: 100%;
+    width: 100%;     
+
 }
 
 #photo {
