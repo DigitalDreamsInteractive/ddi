@@ -1,551 +1,137 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
+
+
+<html lang="en">
+
 <head>
     <meta name="google-site-verification" content="" />
-    <meta property="og:title" content="Misael" />
-    <meta property="og:description" content="digitaldreamsinteractive" />
-    <meta property="og:type" content="Article" />
-    <meta property="og:url" content="https://ddi.github.io/" />
-    <meta property="og:image" content="https://ddi.github.io/img/bg.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    <meta property="og:title" content="DigitalDreams interactive" />
+    <meta property="og:description" content="Software Developer" />
+    <meta property="og:type" content="Application" />
+    <meta property="og:url" content="http://digitaldreamsinteractive.github.io/" />
+    <meta property="og:image" content="https://digitaldreamsinteractive.github.io/img/cover.jpg" />
 
     <meta charset="UTF-8">
-    <meta name="description" content="Resume">
-    <meta name="keywords" content="misael, digitaldreaminteractive">
+    <meta name="description" content="Independent Application Developer">
+    <meta name="keywords"
+        content="Cleanzone, The Lost Village, Invasion, Apocalyptic Survivor, Mav Anti-Malware, Image Converter, Antivirus, Game, Android, Windows">
+    <meta name="author" content="misael">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>DigitalDreams Interactive</title>
-
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/style_small.css">
-    <link rel="stylesheet" type="text/css" href="css/bubble.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.keyframes.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/script.js"></script>
-   
-
-    <style>
-        #loading {
-            position: fixed;
-            display: block;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            text-align: center;
-            z-index: 99;
-        }
-
-        .typewrite{
-            font-size: 25px;
-            left: 50%;
-            top: 50%;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            opacity: 0;
-            animation: fadeIn 1s ease-in forwards;
-        }
-
-        
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-
-    </style>
-
-
+    <script src="js/waypoints.min.js"></script>
 </head>
+
+
 <body>
-
-     
-
-
-<header id="header">
-    <div>
-        <div class="logo">
-            DigitalDream Interactive
+    <header id="headerNav">
+        <div class="container">
+            <nav >
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+                <ul class="nav-links">
+                    <li onclick="hamburgermenu()" id="navicon"></li>
+                    <li onclick="scrollToElement('product')"><a href="#Product">PRODUCT</a></li>
+                    <li><a href="privacy.html">PRIVACY POLICY</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <li onclick="hamburgermenu()" id="navicon"></li>
-            <li onclick="scrollToElement('about')" id="navabout">ABOUT US</li>
-            <li onclick="scrollToElement('product')" id="navskill">PRODUCT</li>
-            <li onclick="scrollToElement('donation')" id="navmultidisciplinary">DONATION</li>
-        </nav>
+    </header>
+    <div class="billboard">
+        <div class="container">
+            <div style="flex: 1;">
+                <div class="billboard-title">Digital Dreams Interactive</div>
+                <div class="billboard-desc">We are a dynamic software development company specializing in the fields of
+                    security and game development. We are dedicated to providing cutting-edge solutions that prioritize both
+                    the safety of digital systems and the immersive experiences of gaming enthusiasts.
+                </div>
+                <div class="billboard-button">
+                    <button style="margin-top: 20px;" onclick="scrollToElement('product')">Look our products</button>
+                </div>
+            </div>
+            <div class="billboard-mascot" style="flex: 1;">
+                <img src="img/mascot.png" width="450">
+            </div>
+        </div>
     </div>
-</header>
 
-
-<div class="content">
-
-
-    <div class="font-dark-color bg-white" style="flex: 4;padding: 30px">
-
-
-
-        <div style="margin-bottom: 50px" class="waypoint" id="about">
-            <div><div>ABOUT ME</div></div>
-
-            <div style="margin-bottom: 20px;">
-                <p class="font-middle" style="max-width: 500px;line-height: 1.6">
-                    Digital Dreams Interactive is a dynamic software development company specializing in the fields of security and game development. We are dedicated to providing cutting-edge solutions that prioritize both the safety of digital systems and the immersive experiences of gaming enthusiasts
-                </p>
-
-            </div>
-
-        </div>
-
-        <div style="margin-bottom: 50px" class="waypoint" id="skill">
-            <div><div>SKILLS</div></div>
-
-            <div class="flex-container">
-                <div class="skill_container">
-                    <div><img src="img/coreldraw.png" width="30"></div>
+    <div class="waypoint"  id="product">
+        <ul class="flex-container">
+    
+            
+            <li class="flex-item">
+                <div class="thumbnail" style="background-image: url('img/thumb/cleanzone.png')"> </div>
+                <div class="desc">
+                    <h2>Cleanzone Mobile Security</h2>
                     <div>
-                        <div class="skill_label">Coreldraw <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                        Cleanzone is anti-malware to protect your phone from adware, ransomware and trojan.
                     </div>
+                    <button class="btn" onclick="visit('cleanzone/index.html',null,true)">Visit</button>
                 </div>
-
-                <div class="skill_container">
-                    <div><img src="img/csp.png" width="30"></div>
+            </li>
+    
+            <li class="flex-item">
+                <div class="thumbnail" style="background-image: url('img/thumb/thelostvillage.png')"> </div>
+                <div class="desc">
+                    <h2>The Lost Village</h2>
                     <div>
-                        <div class="skill_label">Clip Studio Paint  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                        This survival game that combines elements of RPG, shooting and action games.
                     </div>
+                    <button class="btn">Maintenance</button>
                 </div>
-
-                <div class="skill_container">
-                    <div><img src="img/3dmax.png" width="30"></div>
+            </li>
+            
+            <li class="flex-item">
+                <div class="thumbnail" style="background-image: url('img/thumb/Invasion.png')"> </div>
+                <div class="desc">
+                    <h2>Invasion</h2>
                     <div>
-                        <div class="skill_label">3D Studio Max  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
+                        Survival adventure of alien colony. Complete missions and get items to strengthen your character.
                     </div>
+                    <button class="btn">Maintenance</button>
                 </div>
-
-                <div class="skill_container">
-                    <div><img src="img/blender.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Blender  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-unity fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Unity Game Engine  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div><img src="img/an.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Adobe Animate  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-                
-                <div class="skill_container">
-                    <div><img src="img/csharp.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">C#  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-android fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Android Studio  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-java fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Java  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-php fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">PHP  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-laravel fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Laravel  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-js fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Javascript   <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-node fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Node.JS  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div><img src="img/jquery.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Jquery  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                
-                <div class="skill_container">
-                    <div><img src="img/cplusplus.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">C++ <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div><img src="img/vb6.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Visual Basic  <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div>
-                        <i class="fab fa-python fa-2x" ></i> 
-                    </div>
-                    <div>
-                        <div class="skill_label">Python <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-
-                <div class="skill_container">
-                    <div><img src="img/kotlin.png" width="30"></div>
-                    <div>
-                        <div class="skill_label">Kotlin <span class="lblpercent">0%</span></div>
-                        <div class="progressbar"> <div style="width: 0%"></div> </div>
-                    </div>
-                </div>
-                
-            </div>
-
-        </div>
-
-        <div style="margin-bottom: 50px" class="waypoint" id="multidisciplinary">
-            <div><div>MULTIDISCIPLINARY</div></div>
-
-            <div class="flex-container multidisciplinary">
-                <div style="margin-bottom: 20px;">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large"><b>3D Modeling</b></div>
-                        <div class="font-middle">
-                            Capable to making low poly model, weapon, house, vehicle, metahuman and rigging animation
-                        </div>
-                    </div>
-                </div>
-
-                <div style="margin-bottom: 20px;">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large" ><b>Digital Art</b></div>
-                        <div class="font-middle">
-                            Capable to making character and sprite sheet
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div style="margin-bottom: 20px">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large" ><b>Web Development</b></div>
-                        <div class="font-middle">
-                            Understanding native php, javascript, mysql and responsive layout
-                        </div>
-                    </div>
-
-                </div>
-
-                <div style="margin-bottom: 20px;">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large" ><b>Mobile Development</b></div>
-                        <div class="font-middle">
-                            Understanding java, xml, restful web services and admob
-                        </div>
-                    </div>
-                </div>
-
-
-                <div style="margin-bottom: 20px">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large" ><b>Desktop Development</b></div>
-                        <div class="font-middle">
-                            Understanding C# (winform) and mysql connector
-                        </div>
-                    </div>
-
-                </div>
-
-                <div style="margin-bottom: 20px;">
-                    <div style="margin-right: 10px;border-left: 8px solid #333;padding: 8px;display: inline-block;background-color: #ccc">
-                        <div class="font-large" ><b>Game Development</b></div>
-                        <div class="font-middle">
-                            Understanding Particle System, Visual Effect, Scriptable Object, In-app purchase, FPS, 3PS, Isometric for 2D & 3D platform
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-
-        <div style="margin-bottom: 50px" class="waypoint" id="portfolio">
-            <div><div>PORTFOLIO</div></div>
-
-            <ul class="flex-container">
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/thelostvillage.png')">
-                        <div class="thumb_hover" onclick="open_link('https://play.google.com/store/apps/details?id=com.misael.thelostvillage')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> The Lost Village </div>
-                        <div class="font-middle"> Platform : Android </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/invasion.png')">
-                        <div class="thumb_hover" onclick="open_link('https://play.google.com/store/apps/details?id=com.misael.invasion')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> Invasion </div>
-                        <div class="font-middle"> Platform : Android </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/cpuif.png')">
-                        <div class="thumb_hover" onclick="open_link('https://codebreakdev.github.io/cpuif/index.html')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> System Information Software </div>
-                        <div class="font-middle"> Platform : Windows </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/apocalyptic_survivor.png')">
-                        <div class="thumb_hover" onclick="open_link('https://play.google.com/store/apps/details?id=com.DefaultCompany.ApocalypticSurvivor')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> Apocalyptic Survivor </div>
-                        <div class="font-middle"> Platform : Android </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-                
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/antivirus.png')">
-                        <div class="thumb_hover" onclick="open_link('https://codebreakdev.github.io/mav/index.html')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Anti-virus</div>
-                        <div class="font-middle"> Platform : Android, Windows </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/artstation.png')">
-                        <div class="thumb_hover" onclick="open_link('http://misaeljager.artstation.com')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Digital Art</div>
-                        <div class="font-middle"> Dimension : 2D, 3D </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/e-learning.png')">
-                        <div class="thumb_hover">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> E-Learning </div>
-                        <div class="font-middle"> Platform : Web </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/onlineshop.png')">
-                        <div class="thumb_hover" >
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Online Store </div>
-                        <div class="font-middle"> Platform : Web </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/imageconverter.png')">
-                        <div class="thumb_hover" onclick="open_link('https://codebreakdev.github.io/imageconverter/index.html')">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Image Converter</div>
-                        <div class="font-middle"> Platform : Windows </div>
-                        <div class="font-middle activeState"> Status : Active </div>
-                    </div>
-                </li>
-
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/wedding_invitation_video.png')">
-                        <div class="thumb_hover" onclick="open_link('https://www.youtube.com/watch?v=wtJ0lha-1_g')">
-                            <div> Watch </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Wedding Invitation</div>
-                        <div class="font-middle"> Media : Video </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/mediaplayer.png')">
-                        <div class="thumb_hover">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Audio & Video Player</div>
-                        <div class="font-middle"> Platform : Android </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/apk-backup.png')">
-                        <div class="thumb_hover">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold"> Apk Backup</div>
-                        <div class="font-middle"> Platform : Android </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-                <li class="flex-item">
-                    <div class="thumbnail" style="background-image: url('img/thumbnail/plue.png')">
-                        <div class="thumb_hover">
-                            <div> Visit </div>
-                        </div>
-                    </div>
-                    <div class="label">
-                        <div class="font-large" style="font-weight: bold">Social Networking </div>
-                        <div class="font-middle"> Platform : Web </div>
-                        <div class="font-middle inactiveState"> Status : Inactive </div>
-                    </div>
-                </li>
-
-            </ul>
-
-
-        </div>
-
-
-
+            </li>
+    
+    
+        </ul>
     </div>
-</div>
 
 
 
-<footer class=" font-white-color font-small" >
-    Copyright &copy; 2021 Misael. All Rights Reserved.
-</footer>
-<script>
-    $(window).on('load', function () {
-
-        setTimeout(
-        function() 
-        {
-            $("#loading").fadeIn('slow',function(){
-                    $(this).animate({
-                        'top': '-='+$(window).height()
-                    },"slow",function(){
-                        $(this).remove()
-                    });
-                });
-        }, 2000);
-
-
-    });
-
-</script>
+    <div class="container">
+        <div id="founder" >
+            <div id="photo">
+                
+            </div>
+            <div id="quot">
+                <div>
+                    <div >
+                        Future success is often built upon a foundation of past failures and courageous experimentation with raw, untested technologies.
+                    </div>
+                    <div style="margin-top: 40px;">
+                        MISAEL
+                    </div>
+                    <div>
+                        Software Developer <br>& Digital Artist
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    
 </body>
+
+
+<footer class="font-white-color" style="font-size: 14px;background-color: #000;line-height: 1.6;text-align: center;padding: 10px">
+    Copyright &copy; 2023 DigitalDreams Interactive. All Right Reserved.
+</footer>
+
+
 </html>
