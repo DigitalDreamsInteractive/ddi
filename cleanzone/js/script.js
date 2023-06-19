@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     el_navicon.addEventListener("click",navicon,false);
 
     const el_navitem = document.querySelectorAll(".nav > li:not(:first-child)");
-    const arr = ["index.html","http://www.amazon.com/gp/mas/dl/android?p=misael.cleanzone.antivirus", "donate.html", "about.html"];
+    const arr = ["index.html","linktree.html", "donate.html", "about.html"];
 
     for(var i=0; i < arr.length; i++){
         el_navitem[i].addEventListener("click", visit.bind(this, arr[i],false), false);
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function downloadapk(){
-	visit("http://www.amazon.com/gp/mas/dl/android?p=misael.cleanzone.antivirus",true);
+	visit("linktree.html",true);
 }
 
 
